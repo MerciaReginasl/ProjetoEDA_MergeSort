@@ -11,21 +11,21 @@ struct no
 }; 
   
 /* Função para inserir um no no início de uma lista encadeada */
-void inserirnocomecoEnc(struct no **comeco_ref,long int dado); 
+void inserirnocomecoEnc(struct no **inicio_ref,long int dado); 
   
-/* Função para realizar o bubblesort e  ordenar a lista encadeada dada */
-void mergeSortEnc(struct no *comeco); 
+/* Função para realizar o mergeSort e  ordenar a lista encadeada dada */
+void mergeSortEnc(struct no *inicio); 
   
 /* Função para trocar os dados de dois nós (a e b)de uma lista encadeada*/
 void trocalistenc(struct no *a, struct no *b); 
   
 /* Função para printar os nos na lista encadeada */
-void printListEnc(struct no *comeco); 
-
+void printListEnc(struct no *inicio
 // função pra trocar lista sequencial
+
 bool trocaSeq(long int *xp, long int *yp);
 
-// A funcao para implementar o bubble sort na lista sequencial
+// A funcao para implementar o mergesort na lista sequencial
 bool mergeSortSeq(long int vetor[], long int n);
 
 // Função para printar o vetor com lista sequencial
