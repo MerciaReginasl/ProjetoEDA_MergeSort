@@ -1,5 +1,5 @@
-#ifndef ListaMergeSort
-#define ListaMergeSort
+#ifndef bibliotecamerge
+#define bibliotecamerge
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
