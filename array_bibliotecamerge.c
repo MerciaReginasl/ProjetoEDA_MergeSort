@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "bibliotecemerge.h"
+#include "bibliotecamerge.h"
 
 
 void merge(int * arr, int l_esq, int meio, int l_dir) { 
