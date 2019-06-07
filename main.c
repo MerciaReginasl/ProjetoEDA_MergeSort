@@ -17,7 +17,7 @@ int main() {
  
     int arr_size = tam_lista;//sizeof(arr)/sizeof(arr[0]); 
 	for(i=0;i<tam_lista;i++){ 
-		arr[i]=rand()%10;             //inserção dos valores no vetor.
+		arr[i]=rand()%10;             
 	}
    clock_t t;
     t = clock();
