@@ -66,7 +66,7 @@ bool criaarquivoordenado (long int vetor[], long int n ){
 	return true;
 }
 
-// funÃ§Ã£o pra trocar lista sequencial
+// função pra trocar lista sequencial
 bool trocaSeq(long int *xp, long int *yp)
 {
     long int aux = *xp;
@@ -76,20 +76,21 @@ bool trocaSeq(long int *xp, long int *yp)
 }
 
 
-// A funcao para implementar o bubble sort na lista sequencial
+// A funcao para implementar o mergeSort na lista sequencial
 bool mergeSortSeq(long int vetor[], long int n)
 {
-   long int i, j;
+   long int i, 
+   long int j;
    for (i = 0; i < n-1; i++)
 
-       // O Ãºtimo elemento ja esta sendo analisado
+       // O último elemento ja esta sendo analisado
        for (j = 0; j < n-i-1; j++)
            if (vetor[j] > vetor[j+1])
               trocaSeq (&vetor[j], &vetor[j+1]);
               return true;
 }
 
-// FunÃ§Ã£o para printar o vetor com lista sequencial
+// Função para printar o vetor com lista sequencial
 bool printVetorSeq(long int vetor[], long int size)
 {
     long int i;
@@ -98,7 +99,7 @@ bool printVetorSeq(long int vetor[], long int size)
         return true;
 }
 
-/*  FunÃ§Ã£o para inserir um no no inÃ­cio de uma lista encadeada */
+/*  Função para inserir um no no inicio de uma lista encadeada */
 void inserirnoinicioEnc(struct no **inicio, long int dado) 
 { 
     struct no *ptr1 = (struct no*)malloc(sizeof(struct no)); 
@@ -107,7 +108,7 @@ void inserirnoinicioEnc(struct no **inicio, long int dado)
     *inicio = ptr1; 
 } 
   
-/* FunÃ§Ã£o para imprimir os dados da lista encadeada */
+/* Função para imprimir os dados da lista encadeada */
 void printListEnc(struct no *comeco) 
 { 
     struct no *temp = comeco; 
@@ -119,7 +120,7 @@ void printListEnc(struct no *comeco)
     } 
 } 
   
-/* FunÃ§Ã£o para realizar o bubblesort e  ordenar a lista encadeada dada */
+/* Função para realizar o mergeSort e  ordenar a lista encadeada dada */
 void mergeSortEnc(struct no *comeco) 
 { 
     long int trocado, i; 
@@ -149,7 +150,7 @@ void mergeSortEnc(struct no *comeco)
     while (trocado); 
 } 
   
-/* FunÃ§Ã£o para trocar os dados de dois nÃ³s (a e b)de uma lista encadeada*/
+/* Função para trocar os dados de dois  (a e b) de uma lista encadeada*/
 void trocalistenc(struct no *a, struct no *b) 
 { 
     long int temp = a->dado; 
